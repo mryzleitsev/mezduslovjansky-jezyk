@@ -90,3 +90,8 @@ button{
 button:hover{
     background-color: rgba(9, 93, 114, 0.8);
 }
+
+.chosen{
+    border: 1px solid #0088a9;
+    border-radius: 5vh;
+}
