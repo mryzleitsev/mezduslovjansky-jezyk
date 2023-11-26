@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+//    border: 1px red solid;
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -28,6 +34,10 @@ p, h1, h2, h3, h4, h5, h6 {
     isolation: isolate;
 }
 
+li, a, button{
+    font-family: "Montserrat", Georgia;
+}
+
 .wrapper{
     width: 80%;
     margin: 25px auto;
@@ -35,4 +45,48 @@ p, h1, h2, h3, h4, h5, h6 {
     border: 1px solid black;
     background: rgba(0, 0, 0, 0.4);
     border-radius: 5px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vh 10%;
+}
+
+.logo{
+    cursor: pointer;
+    border-radius: 2vh;
+    width: 7vw;
+    height: auto;
+}
+
+.nav__links{
+    list-style: none;
+}
+
+.nav__links li{
+    display: inline-block;
+    padding: 0 2vh;
+}
+
+.nav__links li a{
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+}
+
+.nav__links li a:hover{
+    color: #0088a9;
+}
+
+button{
+    padding: 1vh 2vh;
+    background-color: #095d72;
+    border: none;
+    border-radius: 5vh;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color: rgba(9, 93, 114, 0.8);
 }
