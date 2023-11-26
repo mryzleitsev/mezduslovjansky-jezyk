@@ -15,6 +15,7 @@
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    background-color: #b7e3ef;
 }
 
 img, picture, video, canvas, svg {
@@ -34,16 +35,15 @@ p, h1, h2, h3, h4, h5, h6 {
     isolation: isolate;
 }
 
-li, a, button{
+li, a, button, label, input, textarea{
     font-family: "Montserrat", Georgia;
 }
 
 .wrapper{
     width: 80%;
-    margin: 25px auto;
+    margin: 0 auto;
     padding: 20px;
-    border: 1px solid black;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
 
@@ -52,6 +52,17 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 3vh 10%;
+    border: #095d72 1px solid;
+    border-radius: 3vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vh 10%;
+    border-radius: 3vh;
 }
 
 .logo{
@@ -65,17 +76,17 @@ header{
     list-style: none;
 }
 
-.nav__links li{
+.nav__links li, footer li{
     display: inline-block;
     padding: 0 2vh;
 }
 
-.nav__links li a{
+.nav__links li a, footer li a{
     transition: all 0.3s ease 0s;
     text-decoration: none;
 }
 
-.nav__links li a:hover{
+.nav__links li a:hover, footer li a:hover{
     color: #0088a9;
 }
 
@@ -94,4 +105,39 @@ button:hover{
 .chosen{
     border: 1px solid #0088a9;
     border-radius: 5vh;
+}
+
+footer .footer__logo{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer__logo{
+    width: 6vw;
+    height: auto;
+}
+
+#pg-img{
+    width: 6vh;
+    height: auto;
+}
+
+.contact__form {
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto ;
+}
+
+.contact__form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.contact__form input, .contact__form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
 }
