@@ -10,14 +10,31 @@
 <div class="wrapper">
   <header>
     <img class="logo" src="res/Interslavic.png" alt="flag">
-    <nav>
-      <ul class="nav__links">
-        <li class="chosen"><a href="Index.html">Home</a></li>
-        <li><a href="Community.html">Community</a></li>
-        <li class="chosen"><a href="Grammar.html">Grammar</a></li>
-      </ul>
-    </nav>
-    <a href="https://mryzleitsev.space/" style="text-decoration: none">About page creator</a>
+    <div class="nav__links__container">
+      <nav>
+        <ul class="nav__links">
+          <li id="header__panel_el1"><a href="Index.html">Home</a></li>
+          <li id="header__panel_el2"><a href="Community.html">Community</a></li>
+          <li id="header__panel_el3" class="chosen"><a href="Grammar.html">Grammar</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <a id="header__panel_el4" href="https://mryzleitsev.space/" style="text-decoration: none">About page creator</a>
+    <p hidden="hidden">interslavic language</p>
+
+    <button onclick="toggleOverlay()" id="nav__mobile_drop" hidden="hidden">&#9776;</button>
+    <div id="overlay" class="overlay">
+      <div class="overlay-content">
+        <span onclick="toggleOverlay()" class="close-button cta">&#9776;</span>
+        <ul class="mobile__links">
+          <li><a href="Index.html">Home</a></li>
+          <li><a href="Community.html">Community</a></li>
+          <li class="chosen"><a href="Grammar.html">Grammar</a></li>
+          <li><a href="https://mryzleitsev.space/">About page creator</a></li>
+        </ul>
+      </div>
+    </div>
 
   </header>
   <main>
@@ -28,7 +45,8 @@
     <ul>
       <li>2023 Myron Ryzleitsev</li>
     </ul>
-    <a class="cta" href="Contact.html"><button>Get in touch</button></a>  </footer>
+    <a href="Contact.html"><button>Get in touch</button></a>  </footer>
 </div>
+<script src="main.js"></script>
 </body>
 </html>

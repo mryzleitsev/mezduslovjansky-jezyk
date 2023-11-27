@@ -35,7 +35,7 @@ p, h1, h2, h3, h4, h5, h6 {
     isolation: isolate;
 }
 
-li, a, button, label, input, textarea{
+li, a, button, label, input, textarea, p{
     font-family: "Montserrat", Georgia;
 }
 
@@ -140,4 +140,72 @@ footer .footer__logo{
     padding: 8px;
     margin-bottom: 12px;
     box-sizing: border-box;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #B7E3EFFF;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay-content {
+    background: rgba(0, 0, 0, 0.01);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.close-button {
+    position: absolute;
+    top: 5.7vw;
+    right: 20vw;
+    cursor: pointer;
+    padding: 1vh 2vh;
+    background-color: #095d72;
+    border: none;
+    border-radius: 5vh;
+    transition: all 0.3s ease 0s;
+}
+
+.mobile__links{
+    display: inline;
+}
+
+.mobile__links li{
+    margin: auto;
+    list-style: none;
+}
+
+.mobile__links a{
+    text-decoration: none;
+}
+
+@media (max-width: 992px) {
+    .nav__links {
+        display: none;
+    }
+
+    header p{
+        display: inline;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #header__panel_el1, #header__panel_el2, #header__panel_el3, #header__panel_el4{
+        display: none;
+        text-decoration: none;
+    }
+
+    #nav__mobile_drop {
+        display: block;
+        cursor: pointer;
+    }
+
 }
