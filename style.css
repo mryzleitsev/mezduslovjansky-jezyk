@@ -35,7 +35,7 @@ p, h1, h2, h3, h4, h5, h6 {
     isolation: isolate;
 }
 
-li, a, button, label, input, textarea, p{
+li, a, button, label, input, textarea, p, h1, h2, h3, h4, h5, h6 {
     font-family: "Montserrat", Georgia;
 }
 
@@ -55,6 +55,7 @@ header{
     border: #095d72 1px solid;
     border-radius: 3vh;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5vh;
 }
 
 footer{
@@ -185,6 +186,18 @@ footer .footer__logo{
 
 .mobile__links a{
     text-decoration: none;
+}
+
+.video__container{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-content: center;
+    margin-bottom: 5vh;
+}
+.youtube_video{
+    height: 27vw;
+    width: 48vw;
 }
 
 @media (max-width: 992px) {
