@@ -1,51 +1,1721 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>interslavic language</title>
-  <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>interslavic language</title>
+    <link href="style.css" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 </head>
 <body>
 <div class="wrapper">
-  <header>
-    <img class="logo" src="res/Interslavic.png" alt="flag">
-    <div class="nav__links__container">
-      <nav>
-        <ul class="nav__links">
-          <li id="header__panel_el1"><a href="index.html">Home</a></li>
-          <li id="header__panel_el2"><a href="community.html">Community</a></li>
-          <li id="header__panel_el3" class="chosen"><a href="grammar.html">Grammar</a></li>
+    <header>
+        <img alt="flag" class="logo" src="res/Interslavic.png">
+        <div class="nav__links__container">
+            <nav>
+                <ul class="nav__links">
+                    <li id="header__panel_el1"><a href="index.html">Home</a></li>
+                    <li id="header__panel_el2"><a href="community.html">Community</a></li>
+                    <li class="chosen" id="header__panel_el3"><a href="grammar.html">Grammar</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <a href="https://mryzleitsev.space/" id="header__panel_el4" style="text-decoration: none">About page creator</a>
+        <p hidden="hidden">interslavic language</p>
+
+        <button hidden="hidden" id="nav__mobile_drop" onclick="toggleOverlay()">&#9776;</button>
+        <div class="overlay" id="overlay">
+            <div class="overlay-content">
+                <span class="close-button cta" onclick="toggleOverlay()">&#9776;</span>
+                <ul class="mobile__links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li class="chosen"><a href="grammar.html">Grammar</a></li>
+                    <li><a href="https://mryzleitsev.space/">About page creator</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <main>
+
+        <div class="card" id="abeceda"><h5 class="card__title">Abeceda</h5>
+            <div class="card__body">
+                <table class="table">
+                    <tbody>
+                    <tr>
+                        <td>a</td>
+                        <td>b</td>
+                        <td>c</td>
+                        <td>č</td>
+                        <td>d</td>
+                        <td>dj</td>
+                        <td>dž</td>
+                        <td>e</td>
+                        <td>ě</td>
+                        <td>f</td>
+                        <td>g</td>
+                        <td>h</td>
+                        <td>i</td>
+                        <td>j</td>
+                        <td>ja</td>
+                        <td>ju</td>
+                        <td>k</td>
+                        <td>l</td>
+                        <td>lj</td>
+                    </tr>
+                    <tr>
+                        <td class="s">а</td>
+                        <td class="s">б</td>
+                        <td class="s">ц</td>
+                        <td class="s">ч</td>
+                        <td class="s">д</td>
+                        <td class="s">дь</td>
+                        <td class="s">дж</td>
+                        <td class="s" colspan="2">е</td>
+                        <td class="s">ф</td>
+                        <td class="s">г</td>
+                        <td class="s">х</td>
+                        <td class="s">и</td>
+                        <td class="s">j</td>
+                        <td class="s">я</td>
+                        <td class="s">ю</td>
+                        <td class="s">к</td>
+                        <td class="s">л</td>
+                        <td class="s">ль</td>
+                    </tr>
+                    <tr>
+                        <td>m</td>
+                        <td>n</td>
+                        <td>nj</td>
+                        <td>o</td>
+                        <td>p</td>
+                        <td>q</td>
+                        <td>r</td>
+                        <td>s</td>
+                        <td>š</td>
+                        <td>šč</td>
+                        <td>t</td>
+                        <td>tj</td>
+                        <td>u</td>
+                        <td>v</td>
+                        <td>w</td>
+                        <td>x</td>
+                        <td>y</td>
+                        <td>z</td>
+                        <td>ž</td>
+                    </tr>
+                    <tr>
+                        <td class="s">м</td>
+                        <td class="s">н</td>
+                        <td class="s">нь</td>
+                        <td class="s">о</td>
+                        <td class="s">п</td>
+                        <td class="s">к</td>
+                        <td class="s">р</td>
+                        <td class="s">с</td>
+                        <td class="s">ш</td>
+                        <td class="s">щ</td>
+                        <td class="s">т</td>
+                        <td class="s">ть</td>
+                        <td class="s">у</td>
+                        <td class="s" colspan="2">в</td>
+                        <td class="s">кс</td>
+                        <td class="s">ы</td>
+                        <td class="s">з</td>
+                        <td class="s">ж</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <p style="text-align: start;">
+                V latinici i kirilici jest možno vměsto y pisati prosto i i vměsto ě pisati prosto e.<br>
+                Napriměr: rya→riba, rěka→reka<br>
+                Palatalizacija i evfonija: k→č, h→š, g→ž, cj→č, sj→š, zj→ž<br>
+                Napriměr: Grek→grečky, prah→prašny, Bog→božsky, prosju→prošu<br>
+                1. Staroslovjansko jatj=ѣ=ě se može pisati bez diakritiky kako ie ili prosto e. Podobno č, š, ž se mogut pisati kako cz, sz, zs.<br>
+                2. Staroslovjansko щ jest na početkah slov kako šč, ale potom kako č (Napriměr: ščit, pomoč, občina, svěča)<br>
+                3. V kirilici možno koristiti ligatury: шч → щ, ьу/ју → ю, ьа/ја → я<br>
+                Medžuslovjansky jezyk drži morfologično pravopisanje. Koren slov se piše ravno v vsih padežah. Anglijske, latinske i grečske slova imajut svoje originalno pravopisanje ale s medžuslovjanskymi zakončenjami (arhitektura, biologija ...).<br>
+                </p>
+            </div>
+        </div>
+
+        <div class="card" id="imenniky"><h5 class="card__title">Imenniky</h5>
+            <div class="card__body">
+                <p style="text-align: center;">BRAT (živ.) GRAD (neživ.) mužsky tvrdy vzor</p>
+                <table class="table">
+                    <tbody>
+                    <tr>
+                        <td></td>
+                        <td colspan="2">ednina</td>
+                        <td colspan="2">množina</td>
+                        <td colspan="2">dvojina</td>
+                    </tr>
+                    <tr>
+                        <td class="s">N</td>
+                        <td class="s">brat</td>
+                        <td class="s">grad</td>
+                        <td class="s">brat-i</td>
+                        <td class="s">grad-y</td>
+                        <td class="s">brat-a</td>
+                        <td class="s">grad-a</td>
+                    </tr>
+                    <tr>
+                        <td>A</td>
+                        <td>brat-a</td>
+                        <td>grad</td>
+                        <td>brat-ov</td>
+                        <td>grad-y</td>
+                        <td>brat-u</td>
+                        <td>grad-a</td>
+                    </tr>
+                    <tr>
+                        <td class="s">G</td>
+                        <td class="s">brat-a</td>
+                        <td class="s">grad-a</td>
+                        <td class="s">brat-ov</td>
+                        <td class="s">grad-ov</td>
+                        <td class="s">brat-u</td>
+                        <td class="s">grad-u</td>
+                    </tr>
+                    <tr>
+                        <td>L</td>
+                        <td>brat-u</td>
+                        <td>grad-u</td>
+                        <td>brat-ah</td>
+                        <td>grad-ah</td>
+                        <td>brat-u</td>
+                        <td>grad-u</td>
+                    </tr>
+                    <tr>
+                        <td class="s">D</td>
+                        <td class="s">brat-u</td>
+                        <td class="s">grad-u</td>
+                        <td class="s">brat-am</td>
+                        <td class="s">grad-am</td>
+                        <td class="s">brat-ama</td>
+                        <td class="s">grad-ama</td>
+                    </tr>
+                    <tr>
+                        <td>I</td>
+                        <td>brat-om</td>
+                        <td>grad-om</td>
+                        <td>brat-ami</td>
+                        <td>grad-ami</td>
+                        <td>brat-ama</td>
+                        <td>grad-ama</td>
+                    </tr>
+                    <tr>
+                        <td class="s">V</td>
+                        <td class="s">brat-e!</td>
+                        <td class="s">grad-e!</td>
+                        <td class="s">brat-i!</td>
+                        <td class="s">grad-y!</td>
+                        <td class="s">brat-a!</td>
+                        <td class="s">grad-a!</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <p style="text-align: center;">MUŽ (živ.) NOŽ (neživ.) mužsky mekky vzor</p>
+                <table class="table">
+                    <tbody>
+                    <tr>
+                        <td></td>
+                        <td colspan="2">jednina</td>
+                        <td colspan="2">množina</td>
+                        <td colspan="2">dvojina</td>
+                    </tr>
+                    <tr>
+                        <td class="s">N</td>
+                        <td class="s">muž</td>
+                        <td class="s">nož</td>
+                        <td class="s">muž-i</td>
+                        <td class="s">nož-e</td>
+                        <td class="s">muž-a</td>
+                        <td class="s">nož-a</td>
+                    </tr>
+                    <tr>
+                        <td>A</td>
+                        <td>muž-a</td>
+                        <td>nož</td>
+                        <td>muž-ev</td>
+                        <td>nož-e</td>
+                        <td>muž-u</td>
+                        <td>nož-a</td>
+                    </tr>
+                    <tr>
+                        <td class="s">G</td>
+                        <td class="s">muž-a</td>
+                        <td class="s">nož-a</td>
+                        <td class="s">muž-ev</td>
+                        <td class="s">nož-ev</td>
+                        <td class="s">muž-u</td>
+                        <td class="s">nož-u</td>
+                    </tr>
+                    <tr>
+                        <td>L</td>
+                        <td>muž-u</td>
+                        <td>nož-u</td>
+                        <td>muž-ah</td>
+                        <td>nož-ah</td>
+                        <td>muž-u</td>
+                        <td>nož-u</td>
+                    </tr>
+                    <tr>
+                        <td class="s">D</td>
+                        <td class="s">muž-u</td>
+                        <td class="s">nož-u</td>
+                        <td class="s">muž-am</td>
+                        <td class="s">nož-am</td>
+                        <td class="s">muž-ama</td>
+                        <td class="s">nož-ama</td>
+                    </tr>
+                    <tr>
+                        <td>I</td>
+                        <td>muž-em</td>
+                        <td>nož-em</td>
+                        <td>muž-ami</td>
+                        <td>nož-ami</td>
+                        <td>muž-ama</td>
+                        <td>nož-ama</td>
+                    </tr>
+                    <tr>
+                        <td class="s">V</td>
+                        <td class="s">muž-u!</td>
+                        <td class="s">nož-u!</td>
+                        <td class="s">muž-i!</td>
+                        <td class="s">nož-e!</td>
+                        <td class="s">muž-a!</td>
+                        <td class="s">nož-a!</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <p style="text-align: start;">
+                    Mužske objekty, ktore aktivno dělajut někaky proces, sut žive (od pytanja KTO?) i po tutoj pričině imajut akuzativ ravny s genitivom.<br>
+                    Ostale objekty sut nežive (od pytanja ČTO) i imajut v jednině akuzativ ravny s nominativom.<br>
+                    Napriměr:<br>
+                    - gospod peče hlěb. (hlěb ne može pekti sebe = jest neživy)<br>
+                    - gospod vidi člověka. (člověk može viděti = jest živy)<br>
+                    Slova mužskogo roda zakončeni na -a imajut v jednině klonjenje po tvrdom vzoru žena ili mekkom vzoru duša, ale v množině i dvojině imajut normalny mužsky vzor.<br>
+                    Napriměr:<br>
+                    - vladyk-a, vladyk-y, vladyk-ě, vladyk-u, vladyk-o, ... (jednina)<br>
+                    - vladyk-i, vladyk-ov, vladyk-am, vladyk-ami, ... (množina)<br>
+                </p>
+
+                <p style="text-align: center;">SELO POLJE srědne tvrdy i mekky vzory</p>
+                <table class="table">
+                    <tbody>
+                    <tr>
+                        <td></td>
+                        <td colspan="2">jednina</td>
+                        <td colspan="2">množina</td>
+                        <td colspan="2">dvojina*</td>
+                    </tr>
+                    <tr>
+                        <td class="s">N</td>
+                        <td class="s">sel-o</td>
+                        <td class="s">polj-e</td>
+                        <td class="s">sel-a</td>
+                        <td class="s">polj-a</td>
+                        <td class="s">sel-ě</td>
+                        <td class="s">polj-i</td>
+                    </tr>
+                    <tr>
+                        <td>A</td>
+                        <td>sel-o</td>
+                        <td>polj-e</td>
+                        <td>sel-a</td>
+                        <td>polj-a</td>
+                        <td>sel-ě</td>
+                        <td>polj-i</td>
+                    </tr>
+                    <tr>
+                        <td class="s">G</td>
+                        <td class="s">sel-a</td>
+                        <td class="s">polj-a</td>
+                        <td class="s">sel</td>
+                        <td class="s">polj(-ej)</td>
+                        <td class="s">sel-u</td>
+                        <td class="s">polj-u</td>
+                    </tr>
+                    <tr>
+                        <td>L</td>
+                        <td>sel-u</td>
+                        <td>polj-u</td>
+                        <td>sel-ah</td>
+                        <td>polj-ah</td>
+                        <td>sel-u</td>
+                        <td>polj-u</td>
+                    </tr>
+                    <tr>
+                        <td class="s">D</td>
+                        <td class="s">sel-u</td>
+                        <td class="s">polj-u</td>
+                        <td class="s">sel-am</td>
+                        <td class="s">polj-am</td>
+                        <td class="s">sel-ama</td>
+                        <td class="s">polj-ama</td>
+                    </tr>
+                    <tr>
+                        <td>I</td>
+                        <td>sel-om</td>
+                        <td>polj-em</td>
+                        <td>sel-ami</td>
+                        <td>polj-ami</td>
+                        <td>sel-ama</td>
+                        <td>polj-ama</td>
+                    </tr>
+                    <tr>
+                        <td class="s">V</td>
+                        <td class="s">sel-o!</td>
+                        <td class="s">polj-e!</td>
+                        <td class="s">sel-a!</td>
+                        <td class="s">polj-a!</td>
+                        <td class="s">sel-ě!</td>
+                        <td class="s">polj-i!</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <p style="text-align: center;">N- -R- -T- specialne vzory</p>
+                <table class="table">
+                    <tbody>
+                    <tr>
+                        <td></td>
+                        <td colspan="4">jednina</td>
+                    </tr>
+                    <tr>
+                        <td class="s">N</td>
+                        <td class="s">den</td>
+                        <td class="s">im-e</td>
+                        <td class="s">mat-i</td>
+                        <td class="s">dět-e</td>
+                    </tr>
+                    <tr>
+                        <td>A</td>
+                        <td>den</td>
+                        <td>im-e</td>
+                        <td>mat-i</td>
+                        <td>dět-e</td>
+                    </tr>
+                    <tr>
+                        <td class="s">G</td>
+                        <td class="s">dn-e</td>
+                        <td class="s">im-en-e</td>
+                        <td class="s">mat-er-e</td>
+                        <td class="s">dět-et-e</td>
+                    </tr>
+                    <tr>
+                        <td>L</td>
+                        <td>dn-i</td>
+                        <td>im-en-i</td>
+                        <td>mat-er-i</td>
+                        <td>dět-et-i</td>
+                    </tr>
+                    <tr>
+                        <td class="s">D</td>
+                        <td class="s">dn-i</td>
+                        <td class="s">im-en-i</td>
+                        <td class="s">mat-er-i</td>
+                        <td class="s">dět-et-i</td>
+                    </tr>
+                    <tr>
+                        <td>I</td>
+                        <td>dn-em</td>
+                        <td>im-en-em</td>
+                        <td>mat-er-ju</td>
+                        <td>dět-et-em</td>
+                    </tr>
+                    <tr>
+                        <td class="s">V</td>
+                        <td class="s">dn-i!</td>
+                        <td class="s">im-e!</td>
+                        <td class="s">mat-i!</td>
+                        <td class="s">dět-e!</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <p style="text-align: start;">Na različenje od staroslovjanskogo jezyka, specijalne vzory imajut svoje klonjenje toliko v jednině. Množina i dual jest v normalnyh mekkyh vzorah:<br>
+                    - dn-i=kost-i, imen-a=polj-a, mater-e=duš-e, dět-i=kost-i, ...<br>
+
+                    Medžuslovjansky jezyk koristi nestale [e/·] i [o/·]:<br>
+                    - otec - od·ca, December - Decemb·ra, članok - član·ka, pes - p·sa ...<br>
+                </p>
+
+            </div>
+        </div>
+
+        <div class="card" id="zaimenniky"><h5 class="card__title">Zaimenniky</h5>
+            <div class="card__body">
+                <table class="table">
+                    <tbody>
+                    <tr>
+                        <td></td>
+                        <td>ja</td>
+                        <td>ty</td>
+                        <td>se</td>
+                        <td>my</td>
+                        <td>vy</td>
+                        <td>na</td>
+                        <td>va</td>
+                        <td>kto</td>
+                        <td>čto</td>
+                    </tr>
+                    <tr>
+                        <td class="s">N</td>
+                        <td class="s">ja (az)</td>
+                        <td class="s">ty</td>
+                        <td class="s"></td>
+                        <td class="s">my</td>
+                        <td class="s">vy</td>
+                        <td class="s">na</td>
+                        <td class="s">va</td>
+                        <td class="s">kto</td>
+                        <td class="s">čto</td>
+                    </tr>
+                    <tr>
+                        <td>A</td>
+                        <td>mene</td>
+                        <td>tebe</td>
+                        <td>sebe</td>
+                        <td>nas</td>
+                        <td>vas</td>
+                        <td>na</td>
+                        <td>va</td>
+                        <td>kogo</td>
+                        <td>čto</td>
+                    </tr>
+                    <tr>
+                        <td class="s">G</td>
+                        <td class="s">mene</td>
+                        <td class="s">tebe</td>
+                        <td class="s">sebe</td>
+                        <td class="s">nas</td>
+                        <td class="s">vas</td>
+                        <td class="s">naj</td>
+                        <td class="s">vaj</td>
+                        <td class="s">kogo</td>
+                        <td class="s">čego</td>
+                    </tr>
+                    <tr>
+                        <td>L</td>
+                        <td>mně</td>
+                        <td>tobě</td>
+                        <td>sobě</td>
+                        <td>nas</td>
+                        <td>vas</td>
+                        <td>naj</td>
+                        <td>vaj</td>
+                        <td>kom</td>
+                        <td>čem</td>
+                    </tr>
+                    <tr>
+                        <td class="s">D</td>
+                        <td class="s">mně</td>
+                        <td class="s">tobě</td>
+                        <td class="s">sobě</td>
+                        <td class="s">nam</td>
+                        <td class="s">vam</td>
+                        <td class="s">nama</td>
+                        <td class="s">vama</td>
+                        <td class="s">komu</td>
+                        <td class="s">čemu</td>
+                    </tr>
+                    <tr>
+                        <td>I</td>
+                        <td>mnoju</td>
+                        <td>toboju</td>
+                        <td>soboju</td>
+                        <td>nami</td>
+                        <td>vami</td>
+                        <td>nama</td>
+                        <td>vama</td>
+                        <td>kym</td>
+                        <td>čim</td>
+                    </tr>
+                    <tr>
+                        <td class="s">V</td>
+                        <td class="s"></td>
+                        <td class="s">ty!</td>
+                        <td class="s"></td>
+                        <td class="s">my!</td>
+                        <td class="s">vy!</td>
+                        <td class="s">na!</td>
+                        <td class="s">va!</td>
+                        <td class="s"></td>
+                        <td class="s"></td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <p style="text-align: center;">TOJ TA TO tvrdy vzor</p>
+                <table class="table">
+                    <tbody>
+                    <tr>
+                        <td class="s"></td>
+                        <td class="s">m.ž. jedn.</td>
+                        <td class="s">m.n. jedn.</td>
+                        <td class="s">ž. jedn.</td>
+                        <td class="s">s. jedn.</td>
+                        <td class="s">m.ž.m.</td>
+                        <td class="s">m.n.m. ž.m. s.m.</td>
+                        <td class="s">dvojina</td>
+                    </tr>
+                    <tr>
+                        <td>N</td>
+                        <td  colspan="2">t-oj</td>
+                        <td>t-a</td>
+                        <td>t-o</td>
+                        <td>t-i</td>
+                        <td>t-e</td>
+                        <td>t-e</td>
+                    </tr>
+                    <tr>
+                        <td class="s">A</td>
+                        <td class="s">t-ogo</td>
+                        <td class="s">t-oj</td>
+                        <td class="s">t-u</td>
+                        <td class="s">t-o</td>
+                        <td class="s">t-yh</td>
+                        <td class="s">t-e</td>
+                        <td class="s">t-e</td>
+                    </tr>
+                    <tr>
+                        <td>G</td>
+                        <td colspan="2">t-ogo</td>
+                        <td>t-oj</td>
+                        <td>t-ogo</td>
+                        <td colspan="2">t-yh</td>
+                        <td>t-u</td>
+                    </tr>
+                    <tr>
+                        <td class="s">L</td>
+                        <td colspan="2" class="s">t-om</td>
+                        <td class="s">t-oj</td>
+                        <td class="s">t-om</td>
+                        <td colspan="2" class="s">t-yh</td>
+                        <td class="s">t-u</td>
+                    </tr>
+                    <tr>
+                        <td>D</td>
+                        <td colspan="2">t-omu</td>
+                        <td>t-oj</td>
+                        <td>t-omu</td>
+                        <td colspan="2">t-ym</td>
+                        <td>t-yma</td>
+                    </tr>
+                    <tr>
+                        <td class="s">I</td>
+                        <td colspan="2" class="s">t-ym</td>
+                        <td class="s">t-oju</td>
+                        <td class="s">t-ym</td>
+                        <td colspan="2" class="s">t-ym</td>
+                        <td class="s">t-yma</td>
+                    </tr>
+                    <tr>
+                        <td>V</td>
+                        <td colspan="2">t-oj!</td>
+                        <td>t-a!</td>
+                        <td>t-o!</td>
+                        <td>t-i!</td>
+                        <td>t-e!</td>
+                        <td>t-e!</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <p style="text-align: center;">ON ONA ONO mekky vzor</p>
+                <table class="table">
+                    <tbody>
+                    <tr>
+                        <td class="s"></td>
+                        <td class="s">m.ž. jedn.</td>
+                        <td class="s">m.n. jedn.</td>
+                        <td class="s">ž. jedn.</td>
+                        <td class="s">s. jedn.</td>
+                        <td class="s">m.ž.m.</td>
+                        <td class="s">m.n.m. ž.m. s.m.</td>
+                        <td class="s">dvojina*</td>
+                    </tr>
+                    <tr>
+                        <td>N</td>
+                        <td colspan="2">on</td>
+                        <td>on-a</td>
+                        <td>on-o</td>
+                        <td>on-i</td>
+                        <td>on-e</td>
+                        <td>on-e</td>
+                    </tr>
+                    <tr>
+                        <td class="s">A</td>
+                        <td class="s">(n)j-ego</td>
+                        <td class="s">(n)j-ej</td>
+                        <td class="s">(n)j-u</td>
+                        <td class="s">(n)j-e</td>
+                        <td class="s">(n)j-ih</td>
+                        <td class="s">(n)j-e</td>
+                        <td class="s">(n)j-e</td>
+                    </tr>
+                    <tr>
+                        <td>G</td>
+                        <td colspan="2">(n)j-ego</td>
+                        <td>(n)j-ej</td>
+                        <td>(n)j-ego</td>
+                        <td colspan="2">(n)j-ih</td>
+                        <td>(n)j-u</td>
+                    </tr>
+                    <tr>
+                        <td class="s">L</td>
+                        <td colspan="2" class="s">(n)j-em</td>
+                        <td class="s">(n)j-ej</td>
+                        <td class="s">(n)j-em</td>
+                        <td colspan="2" class="s">(n)j-ih</td>
+                        <td class="s">(n)j-u</td>
+                    </tr>
+                    <tr>
+                        <td>D</td>
+                        <td colspan="2">(n)j-emu</td>
+                        <td>(n)j-ej</td>
+                        <td>(n)j-emu</td>
+                        <td colspan="2">(n)j-im</td>
+                        <td>(n)j-ima</td>
+                    </tr>
+                    <tr>
+                        <td class="s">I</td>
+                        <td colspan="2" class="s">(n)j-im</td>
+                        <td class="s">(n)j-eju</td>
+                        <td class="s">(n)j-im</td>
+                        <td colspan="2" class="s">(n)j-im</td>
+                        <td class="s">(n)j-ima</td>
+                    </tr>
+                    <tr>
+                        <td>V</td>
+                        <td colspan="2">-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <p style="text-align: start">
+                    Mekky vzor klonjenja (-ego, -emu, ...) imajut zaimenniky:<br>
+                    - MOJ-MOJA-MOJE, TVOJ-TVOJA-TVOJE, NAŠ-NAŠA-NAŠE, VAŠ-VAŠA-VAŠE, VSEj-VSA-VSE, KOJ, KOJA, KOJE, ČIJ, ČIJA, ČIJE ...<br>
+
+                    Tvar n- pišemo toliko v padežah s prědlogom:<br>
+                    - slyšu jego, rabotaju za njego, idu s njimi, pišu jemu, idu k njemu<br>
+                </p>
+
+            </div>
+        </div>
+
+        <div class="card" id="pridavniky"><h5 class="card__title">Pridavniky</h5>
+            <div class="card__body">
+                <p style="text-align: center;">DOBRY tvrdy vzor</p>
+                <table class="table">
+                    <tbody>
+                    <tr>
+                        <td class="s"></td>
+                        <td class="s">m.ž. jedn.</td>
+                        <td class="s">m.n. jedn.</td>
+                        <td class="s">ž. jedn.</td>
+                        <td class="s">s. jedn.</td>
+                        <td class="s">m.ž.m.</td>
+                        <td class="s">m.n.m. ž.m. s.m.</td>
+                        <td class="s">dvojina</td>
+                    </tr>
+                    <tr>
+                        <td>N</td>
+                        <td colspan="2">dobr-y</td>
+                        <td>dobr-a</td>
+                        <td>dobr-o</td>
+                        <td>dobr-i</td>
+                        <td>dobr-e</td>
+                        <td>dobr-e</td>
+                    </tr>
+                    <tr>
+                        <td class="s">A</td>
+                        <td class="s">dobr-ogo</td>
+                        <td class="s">dobr-y</td>
+                        <td class="s">dobr-u</td>
+                        <td class="s">dobr-o</td>
+                        <td class="s">dobr-yh</td>
+                        <td class="s">dobr-e</td>
+                        <td class="s">dobr-e</td>
+                    </tr>
+                    <tr>
+                        <td>G</td>
+                        <td colspan="2">dobr-ogo</td>
+                        <td>dobr-oj</td>
+                        <td>dobr-ogo</td>
+                        <td colspan="2">dobr-yh</td>
+                        <td>dobr-u</td>
+                    </tr>
+                    <tr>
+                        <td class="s">L</td>
+                        <td colspan="2" class="s">dobr-om</td>
+                        <td class="s">dobr-oj</td>
+                        <td class="s">dobr-om</td>
+                        <td colspan="2" class="s">dobr-yh</td>
+                        <td class="s">dobr-u</td>
+                    </tr>
+                    <tr>
+                        <td>D</td>
+                        <td colspan="2">dobr-omu</td>
+                        <td>dobr-oj</td>
+                        <td>dobr-omu</td>
+                        <td colspan="2">dobr-ym</td>
+                        <td>dobr-yma</td>
+                    </tr>
+                    <tr>
+                        <td class="s">I</td>
+                        <td colspan="2" class="s">dobr-ym</td>
+                        <td class="s">dobr-oju</td>
+                        <td class="s">dobr-ym</td>
+                        <td colspan="2" class="s">dobr-ym</td>
+                        <td class="s">dobr-yma</td>
+                    </tr>
+                    <tr>
+                        <td>V</td>
+                        <td colspan="2">dobr-y!</td>
+                        <td>dobr-a!</td>
+                        <td>dobr-o!</td>
+                        <td>dobr-i!</td>
+                        <td>dobr-e!</td>
+                        <td>dobr-e!</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <p style="text-align: center;">SVĚŽI mekky vzor</p>
+                <table class="table">
+                    <tbody>
+                    <tr>
+                        <td class="s"></td>
+                        <td class="s">m.ž. jedn.</td>
+                        <td class="s">m.n. jedn.</td>
+                        <td class="s">ž. jedn.</td>
+                        <td class="s">s. jedn.</td>
+                        <td class="s">m.ž.m.</td>
+                        <td class="s">m.n.m. ž.m. s.m.</td>
+                        <td class="s">dvojina</td>
+                    </tr>
+                    <tr>
+                        <td>N</td>
+                        <td colspan="2">svěž-i</td>
+                        <td>svěž-a</td>
+                        <td>svěž-e</td>
+                        <td>svěž-i</td>
+                        <td>svěž-e</td>
+                        <td>svěž-e</td>
+                    </tr>
+                    <tr>
+                        <td class="s">A</td>
+                        <td class="s">svěž-ego</td>
+                        <td class="s">svěž-i</td>
+                        <td class="s">svěž-u</td>
+                        <td class="s">svěž-e</td>
+                        <td class="s">svěž-ih</td>
+                        <td class="s">svěž-e</td>
+                        <td class="s">svěž-e</td>
+                    </tr>
+                    <tr>
+                        <td>G</td>
+                        <td colspan="2">svěž-ego</td>
+                        <td>svěž-ej</td>
+                        <td>svěž-ego</td>
+                        <td colspan="2">svěž-ih</td>
+                        <td>svěž-u</td>
+                    </tr>
+                    <tr>
+                        <td class="s">L</td>
+                        <td colspan="2" class="s">svěž-em</td>
+                        <td class="s">svěž-ej</td>
+                        <td class="s">svěž-em</td>
+                        <td colspan="2" class="s">svěž-ih</td>
+                        <td class="s">svěž-u</td>
+                    </tr>
+                    <tr>
+                        <td>D</td>
+                        <td colspan="2">svěž-emu</td>
+                        <td>svěž-ej</td>
+                        <td>svěž-emu</td>
+                        <td colspan="2">svěž-im</td>
+                        <td>svěž-ima</td>
+                    </tr>
+                    <tr>
+                        <td class="s">I</td>
+                        <td colspan="2" class="s">svěž-im</td>
+                        <td class="s">svěž-eju</td>
+                        <td class="s">svěž-im</td>
+                        <td colspan="2" class="s">svěž-im</td>
+                        <td class="s">svěž-ima</td>
+                    </tr>
+                    <tr>
+                        <td>V</td>
+                        <td colspan="2">svěž-i!</td>
+                        <td>svěž-a!</td>
+                        <td>svěž-e!</td>
+                        <td>svěž-i!</td>
+                        <td>svěž-e!</td>
+                        <td>svěž-e!</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <table class="table">
+                    <tbody>
+                    <tr>
+                        <td>GRADACIJA</td>
+                        <td>bez palatizacije</td>
+                        <td>s palatizacijeju do č,š,ž</td>
+                    </tr>
+                    <tr>
+                        <td class="s">superlativ</td>
+                        <td class="s">naj-bogat-ějš-i (iz ...)</td>
+                        <td class="s">naj-draž-ejš-i (iz ...)</td>
+                    </tr>
+                    <tr>
+                        <td>komparativ</td>
+                        <td>bogat-ějš-i (od ...)</td>
+                        <td>draž-ejš-i (od ...)</td>
+                    </tr>
+                    <tr>
+                        <td class="s">indikativ</td>
+                        <td class="s">bogat-y</td>
+                        <td class="s">drag-y</td>
+                    </tr>
+                    <tr>
+                        <td>augmentativ</td>
+                        <td>naj-bogat-y</td>
+                        <td>naj-drag-y</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <p style="text-align: start">skračenje: tvrd-ěj-ši→tvrd-ši krat-čej-ši→krat-ši bogat-ěj-ši→bogat-ši</p>
+            </div>
+        </div>
+
+        <div class="card" id="glagoly"><h5 class="card__title">Glagoly</h5>
+            <div class="card__body">
+                <p style="text-align: center;">IMĚTI tvrdy -eš vzor</p>
+                <table class="table">
+                    <tbody>
+                    <tr>
+                        <td>infinitiv</td>
+                        <td colspan="3">im-ě-ti</td>
+                    </tr>
+                    <tr>
+                        <td>L-particip</td>
+                        <td colspan="3">im-ě-l, im-ě-la, im-ě-lo, im-ě-li, im-ě-le</td>
+                    </tr>
+                    <tr>
+                        <td>glagolno ime</td>
+                        <td colspan="3">im-ě-nje (od prošlogo pasivnogo participa)</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">nastoječe vrěme (tvrde glagoly mogut iměti koren v nastoječem vrěmeni, ne jednaky s korenem infinitiva)</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>jednina</td>
+                        <td>množina</td>
+                        <td>dvojina*</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>imaj-u</td>
+                        <td>imaj-emo</td>
+                        <td>imaj-evě</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>imaj-eš</td>
+                        <td>imaj-ete</td>
+                        <td>imaj-eta</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>imaj-e</td>
+                        <td>imaj-ut</td>
+                        <td>imaj-ete</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">aktivny nastoječi particip</td>
+                        <td colspan="2">imaj-uči ≈ jesmy</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">pasivny nastoječi particip</td>
+                        <td colspan="2">imaj-emy ≈ nastoječi</td>
+                    </tr>
+                    <tr>
+                        <td>imperativ</td>
+                        <td colspan="3">imaj! imaj-mo! imaj-te!</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">imperfekt (infinitivny koren i samoglasnik iz infinitivnogo zakončenja)</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>jednina</td>
+                        <td>množina</td>
+                        <td>dvojina*</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>im-ě-h</td>
+                        <td>im-ě-hmo</td>
+                        <td>im-ě-hova</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>im-ě-še</td>
+                        <td>im-ě-šte</td>
+                        <td>im-ě-šta</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>im-ě-še</td>
+                        <td>im-ě-hu</td>
+                        <td>im-ě-šte</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"></td>
+                        <td>aktivny prošly particip</td>
+                        <td>im-ě-vši ≈ b-y-ty</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"></td>
+                        <td>pasivny prošly particip</td>
+                        <td>im-ě-ny ≈ b-y-vši</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <p style="text-align: start">Pasivny prošly particip tvrdyh glagolov –iti –eti –uti –yti jest –ity –ety –uty –yty:<br>
+                    piti→pity, kleti→klety, obuti→obuty, kryti→kryty ... vse druge imajut –▪ny.</p>
+
+                <p style="text-align: center;">VARITI mekky -iš vzor</p>
+                <table class="table">
+                    <tbody>
+                    <tr>
+                        <td>infinitiv</td>
+                        <td colspan="3">var-i-ti</td>
+                    </tr>
+                    <tr>
+                        <td>L-particip</td>
+                        <td colspan="3">var-i-l, var-i-la, var-i-lo, var-i-li, var-i-le</td>
+                    </tr>
+                    <tr>
+                        <td>glagolno ime</td>
+                        <td colspan="3">var-je-nje (od prošlogo pasivnogo participa)</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">nastoječe vrěme (tvrde glagoly možut iměti koren v nastoječem vrěmeni, ktory ne sběgaje se s korenem infinitiva)</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>jednina</td>
+                        <td>množina</td>
+                        <td>dvojina*</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>var-ju (var-im)</td>
+                        <td>var-imo</td>
+                        <td>var-ivě</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>var-iš</td>
+                        <td>var-ite</td>
+                        <td>var-ita</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>var-i</td>
+                        <td>var-et (var-it)</td>
+                        <td>var-ite</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">aktivny nastoječi particip</td>
+                        <td colspan="2">var-eči</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">pasivny nastoječi particip</td>
+                        <td colspan="2">var-imy</td>
+                    </tr>
+                    <tr>
+                        <td>imperativ</td>
+                        <td colspan="3">var-i! var-imo! var-ite!</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">imperfekt* (infinitivny koren i samoglasnik iz infinitivnogo zakončenja)</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>jednina</td>
+                        <td>množina</td>
+                        <td>dvojina*</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>var-i-h</td>
+                        <td>var-i-hmo</td>
+                        <td>var-i-hova</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>var-i-še</td>
+                        <td>var-i-šte</td>
+                        <td>var-i-šta</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>var-i-še</td>
+                        <td>var-i-hu</td>
+                        <td>var-i-šte</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"></td>
+                        <td>aktivny prošly particip</td>
+                        <td>var-i-vši</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"></td>
+                        <td>pasivny prošly particip</td>
+                        <td>var-je-ny</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <p style="text-align: start">
+                    Pasivny prošly particip mekkyh glagolov jest –jeni –jena –jeno,<br>
+                    ale dj→dž (viděti, vidžu, vidiš, vidženy),<br>
+                    tj→č (vratiti, vraču, vratiš, vračeny)<br>
+                    sj→š (prositi, prošu, prosiš, prošeny),<br>
+                    stj→šč (koristiti, korišču, koristiš, koriščeny)<br>
+                    Pasivny prošly particip vsih ostalyh glagolov –ati –ěti –▪ti jest –any –ěny –eny:<br>
+                    dělati→dělany, pekti→pek–eny→pečeny ...<br>
+                </p>
+
+                <table class="table">
+                    <tr>
+                        <td class="s">GLAGOLNE vrěmena</td>
+                        <td class="s">neizvršene glagoly</td>
+                        <td class="s">izvršene glagoly</td>
+                    </tr>
+                    <tr>
+                        <td>buduče vrěme</td>
+                        <td>budu pisati</td>
+                        <td>budu napisati (napišu)</td>
+                    </tr>
+                    <tr>
+                        <td class="s">prědbuduče vrěme</td>
+                        <td class="s">budu pisal</td>
+                        <td class="s">budu napisal</td>
+                    </tr>
+                    <tr>
+                        <td>nastoječe vrěme</td>
+                        <td>pišu</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td class="s">perfekt</td>
+                        <td class="s">jesm pisal</td>
+                        <td class="s">jesm napisal</td>
+                    </tr>
+                    <tr>
+                        <td>imperfekt*</td>
+                        <td>pisah</td>
+                        <td>napisah</td>
+                    </tr>
+                    <tr>
+                        <td class="s">pluskvamperfekt</td>
+                        <td class="s">běh pisal</td>
+                        <td class="s">běh napisal</td>
+                    </tr>
+                </table>
+
+                <p style="text-align: start">
+                    Aktivne glagolne participy mogut tvoriti aktivny nastoječi i aktivny prošly prislovniky:  <br>
+                    dělati → dělaj-u-č, děl-a-v<br>
+                    variti → var-e-č, var-i-v<br>
+                </p>
+            </div>
+        </div>
+
+        <div class="card" id="neredne_glagoly"><h5 class="card__title">Neredne glagoly</h5>
+            <div class="card__body">
+                <p style="text-align: center;">BYTI</p>
+                <table class="table">
+                    <tbody>
+                    <tr>
+                        <td>infinitiv</td>
+                        <td colspan="3">b-y-ti</td>
+                    </tr>
+                    <tr>
+                        <td>L-particip</td>
+                        <td colspan="3">b-y-l, b-y-la, b-y-lo, b-y-li, b-y-le</td>
+                    </tr>
+                    <tr>
+                        <td>glagolno ime</td>
+                        <td colspan="3">b-y-tje (od prošlogo pasivnogo participa)</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">buduče vrěme</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>jednina</td>
+                        <td>množina</td>
+                        <td>dvojina*</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>bud-u</td>
+                        <td>bud-emo</td>
+                        <td>bud-evě</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>bud-eš</td>
+                        <td>bud-ete</td>
+                        <td>bud-eta</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>bud-e</td>
+                        <td>bud-ut</td>
+                        <td>bud-ete</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>aktivny buduči particip</td>
+                        <td colspan="2">bud-uči ≈ jesmy</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>pasivny buduči particip</td>
+                        <td colspan="2">bud-emy ≈ nastoječi</td>
+                    </tr>
+                    <tr>
+                        <td>imperativ</td>
+                        <td colspan="3">bud-i! bud-imo! bud-ite!</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">nastoječe vrěme</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>jednina</td>
+                        <td>množina</td>
+                        <td>dvojina*</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>jesm</td>
+                        <td>jesmo</td>
+                        <td>jesvě</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>jesi</td>
+                        <td>jeste</td>
+                        <td>jesta</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>jest=je</td>
+                        <td>sut</td>
+                        <td>jeste</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>aktivny nastoječi particip</td>
+                        <td colspan="2">nastoječi ≈ imaj-emy</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>pasivny nastoječi particip</td>
+                        <td colspan="2">jesmy ≈ imaj-uči</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">imperfekt*</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>jednina</td>
+                        <td>množina</td>
+                        <td>dvojina*</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>b-ě-h</td>
+                        <td>b-ě-hmo</td>
+                        <td>b-ě-hova</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>b-ě-še</td>
+                        <td>b-ě-šte</td>
+                        <td>b-ě-šta</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>b-ě-še=b-ě</td>
+                        <td>b-ě-hu</td>
+                        <td>b-ě-šte</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>aktivny prošly particip</td>
+                        <td colspan="2">by-y-vši ≈ im-ě-ny</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>pasivny prošly particip</td>
+                        <td colspan="2">b-y-ty ≈ im-ě-vši</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">kondicional</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>jednina</td>
+                        <td>množina</td>
+                        <td>dvojina*</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>b-y-h</td>
+                        <td>b-y-hmo</td>
+                        <td>b-y-hova</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>b-y-s</td>
+                        <td>b-y-ste</td>
+                        <td>b-y-sta</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>b-y</td>
+                        <td>b-y-hu=b-y</td>
+                        <td>b-y-ste</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <p style="text-align: start">
+                    Neredne glagoly VĚDĚTI, DATI, IDTI, JESTI<br>
+                    věděti, věděnje – věm, věš, vě, věmo, věte, vědut ... věděl, věděh ... vědi!, vědite!<br>
+                    dati, danje – dam, daš, da, damo, date, dadut ... dal, dah ... daj! dajte!<br>
+                    idti, idenje – idu, ideš, ide, idemo, idete, idut ... išel, ideh ... idi!, idite!<br>
+                    jesti, jedenje – jedu, jedeš, jede, jedemo, jedete, jedut ... jedl, jedeh ... jedi!, jedite!<br>
+                    (krasti, kradenje – kradu, kradeš, krade, krademo ... kradl, kradeh ... kradi!, ...)<br>
+                </p>
+            </div>
+        </div>
+
+        <div class="card" id="prislovniky"><h5 class="card__title">Prislovniky</h5>
+            <div class="card__body">
+                <p style="text-align: start;">
+                    Poslě tvrdyh soglasok jest zakončenje -o, poslě mekkyh č š ž j jest -e.<br>
+                    Napriměr: dobr-o, bystr-o, už-e, daž-e, menš-e<br>
+                    Prislovniky iz pridavnikov zakončenyh na -sky imajut zakončenje -sky.<br>
+                    Napriměr: pridavnik poljsky,a,o → prislovnik poljsky<br>
+                </p>
+                <table class="table">
+                    <tr>
+                        <th>GRADACIJA</th>
+                        <th>bez palatizacije</th>
+                        <th>s palatizacijeju do č,š,ž</th>
+                    </tr>
+                    <tr>
+                        <td class="s">superlativ</td>
+                        <td class="s">naj-bogat-ěje (iz ...)</td>
+                        <td class="s">naj-draž-eje (iz ...)</td>
+                    </tr>
+                    <tr>
+                        <td>komparativ</td>
+                        <td>bogat-ěj-e (od ...)</td>
+                        <td>draž-ej-e (od ...)</td>
+                    </tr>
+                    <tr>
+                        <td class="s">indikativ</td>
+                        <td class="s">bogat-o</td>
+                        <td class="s">drag-o</td>
+                    </tr>
+                    <tr>
+                        <td>augmentativ</td>
+                        <td>naj-bogat-o</td>
+                        <td>naj-drag-o</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="card" id="predlogy"><h5 class="card__title">Predlogy</h5>
+            <div class="card__body">
+                <p style="text-align: start;">
+                    s genitivom:	bez, iz, do, od, u, kromě, poslě, vně, radi, ... <br>
+                    s dativom:	k, protiv, ...<br>
+                    s akuzativom:	nad, pod, prěd, črěz, v, za, na, vně, medžu, mimo, ...<br>
+                    s lokativom:	o, po, pri, v, na, ...<br>
+                    s instrumentalom:	s, nad, pod, prěd, za, medžu, ...<br>
+                </p>
+            </div>
+        </div>
+
+
+        <div class="card" id="cislovniky"><h5 class="card__title">Čislovniky</h5>
+            <div class="card__body">
+                <table class="table">
+                    <tr>
+                        <td>1</td>
+                        <td>jedin, jedna, jedno</td>
+                        <td>11</td>
+                        <td>jedinnadset</td>
+                        <td>21</td>
+                        <td>dvadeset jedin</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>dva, dvě, dvě</td>
+                        <td>12</td>
+                        <td>dvanadset</td>
+                        <td>22</td>
+                        <td>dvadeset dva</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>tri</td>
+                        <td>13</td>
+                        <td>trinadset</td>
+                        <td>23</td>
+                        <td>dvadeset tri</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>četyri</td>
+                        <td>14</td>
+                        <td>četyrinadset</td>
+                        <td>24</td>
+                        <td>dvadeset četyri</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>pet</td>
+                        <td>15</td>
+                        <td>petnadset</td>
+                        <td>25</td>
+                        <td>dvadeset pet</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>šest</td>
+                        <td>16</td>
+                        <td>šestnadset</td>
+                        <td>26</td>
+                        <td>dvadeset šest</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>sedm</td>
+                        <td>17</td>
+                        <td>sedmnadset</td>
+                        <td>27</td>
+                        <td>dvadeset sedm</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>osm</td>
+                        <td>18</td>
+                        <td>osmnadset</td>
+                        <td>28</td>
+                        <td>dvadeset osm</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>devet</td>
+                        <td>19</td>
+                        <td>devetnadset</td>
+                        <td>29</td>
+                        <td>dvadeset devet</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>deset</td>
+                        <td>110</td>
+                        <td>sto deset</td>
+                        <td>1100</td>
+                        <td>tyseč sto</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>dvadeset</td>
+                        <td>200</td>
+                        <td>dvasto</td>
+                        <td>2000</td>
+                        <td>dva tyseč</td>
+                    </tr>
+                    <tr>
+                        <td>30</td>
+                        <td>trideset</td>
+                        <td>300</td>
+                        <td>tristo</td>
+                        <td>3000</td>
+                        <td>tri tyseč</td>
+                    </tr>
+                    <tr>
+                        <td>40</td>
+                        <td>četyrideset</td>
+                        <td>400</td>
+                        <td>četyristo</td>
+                        <td>4000</td>
+                        <td>četyri tyseč</td>
+                    </tr>
+                    <tr>
+                        <td>50</td>
+                        <td>petdeset</td>
+                        <td>500</td>
+                        <td>petsto</td>
+                        <td>5000</td>
+                        <td>pet tyseč</td>
+                    </tr>
+                    <tr>
+                        <td>60</td>
+                        <td>šestdeset</td>
+                        <td>600</td>
+                        <td>šeststo</td>
+                        <td>6000</td>
+                        <td>šest tyseč</td>
+                    </tr>
+                    <tr>
+                        <td>70</td>
+                        <td>sedmdeset</td>
+                        <td>700</td>
+                        <td>sedmsto</td>
+                        <td>7000</td>
+                        <td>sedm tyseč</td>
+                    </tr>
+                    <tr>
+                        <td>80</td>
+                        <td>osmdeset</td>
+                        <td>800</td>
+                        <td>osmsto</td>
+                        <td>10^6</td>
+                        <td>milion</td>
+                    </tr>
+                    <tr>
+                        <td>90</td>
+                        <td>devetdeset</td>
+                        <td>900</td>
+                        <td>devetsto</td>
+                        <td>10^9</td>
+                        <td>bilion</td>
+                    </tr>
+                    <tr>
+                        <td>100</td>
+                        <td>sto</td>
+                        <td>1000</td>
+                        <td>tyseč</td>
+                        <td>0</td>
+                        <td>nula</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>prvy</td>
+                        <td>11</td>
+                        <td>jedinnadsety</td>
+                        <td>21</td>
+                        <td>dvadeset prvy</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>vtory</td>
+                        <td>20</td>
+                        <td>dvadesety</td>
+                        <td>200</td>
+                        <td>dvěsotny</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>tretji (mekky vzor)</td>
+                        <td>30</td>
+                        <td>tridesety</td>
+                        <td>201</td>
+                        <td>dvasto prvy</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>četvrty</td>
+                        <td>40</td>
+                        <td>četyridesety</td>
+                        <td>210</td>
+                        <td>dvasto desety</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>pety</td>
+                        <td>50</td>
+                        <td>petdesety</td>
+                        <td>5000</td>
+                        <td>pet tysečny</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>šesty</td>
+                        <td>60</td>
+                        <td>šestdesety</td>
+                        <td>6000</td>
+                        <td>šest tysečny</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>sedmy</td>
+                        <td>70</td>
+                        <td>sedmdesety</td>
+                        <td>7000</td>
+                        <td>sedm tysečny</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>osmy</td>
+                        <td>80</td>
+                        <td>osmdesety</td>
+                        <td>10^6</td>
+                        <td>milionty</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>devety</td>
+                        <td>90</td>
+                        <td>devetdesety</td>
+                        <td>10^9</td>
+                        <td>bilionty</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>desety</td>
+                        <td>100</td>
+                        <td>sotny</td>
+                        <td>0</td>
+                        <td>nulty</td>
+                    </tr>
+                </table>
+                <p style="text-align: start">
+                    25 746 = dvadeset pet tyseč sedmsto četyrideset šest.<br>
+                    25 746 = dvadeset pet tyseč sedmsto četyrideset šesty.<br>
+                    dva, dvoh, dvom, dvoma<br>
+                    tri, trěh, trěm, trěmi<br>
+                    četyri, četyrěh, četyrěm, četyrěmi<br>
+                    jedin, jednogo (TOJ)<br>
+                    pet, peti... 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 (KOST)<br>
+                    nula, nuly (ŽENA)<br>
+                    sto, sta (SELO)<br>
+                    tyseč, tyseči (KOST)<br>
+                    milion, miliona (GRAD)<br>
+                </p>
+            </div>
+        </div>
+
+        <div class="card" id="svezniky"><h5 class="card__title">Svezniky</h5>
+            <div class="card__body">
+                <table class="table">
+                    <tr>
+                        <td>sojednjenja</td>
+                        <td>i, ni ... ni</td>
+                    </tr>
+                    <tr>
+                        <td>razlučenja</td>
+                        <td>ili, i ili</td>
+                    </tr>
+                    <tr>
+                        <td>popisanja</td>
+                        <td>že</td>
+                    </tr>
+                    <tr>
+                        <td>odpora</td>
+                        <td>ale, no</td>
+                    </tr>
+                    <tr>
+                        <td>pričiny</td>
+                        <td>bo, zatože</td>
+                    </tr>
+                    <tr>
+                        <td>smysla</td>
+                        <td>da</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="card" id="cestice"><h5 class="card__title">Čestice</h5>
+            <div class="card__body">
+                <table class="table">
+                    <tr>
+                        <td>sojednjenja</td>
+                        <td>i, ni ... ni</td>
+                    </tr>
+                    <tr>
+                        <td>razlučenja</td>
+                        <td>ili, i ili</td>
+                    </tr>
+                    <tr>
+                        <td>popisanja</td>
+                        <td>že</td>
+                    </tr>
+                    <tr>
+                        <td>odpora</td>
+                        <td>ale, no</td>
+                    </tr>
+                    <tr>
+                        <td>pričiny</td>
+                        <td>bo, zatože</td>
+                    </tr>
+                    <tr>
+                        <td>smysla</td>
+                        <td>da</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="card" id="medzuslovniky"><h5 class="card__title">Medžuslovniky</h5>
+            <div class="card__body">
+            <p style="text-align: start">oh! ah! uva! lutě!<br>
+                «značenje medžuslovnika takože imajut vse izrěčenja v navodnicah»</p>
+            </div>
+        </div>
+
+        <div class="card" id="podredne"><h5 class="card__title">Podredne izrěčenja</h5>
+            <div class="card__body">
+                <p style="text-align: start">..., kde ... ..., ktoromu..., tako ..., kako ... toliko ..., koliko ... ..., že ...<br>
+                    tvary iže, jegože, jimže, ... sut relativne zaimenniky od on, ona, ono </p>
+            </div>
+        </div>
+
+        <div class="card" id="primetky"><h5 class="card__title">Primětky (*)</h5>
+            <div class="card__body">
+                <p style="text-align: start"> 1. Dvojina je shranila se nyně jedino v slovenskom i lužičskyh jezykah, tomu vměsto tutoj formy jest rekomendovano koristati množinu.<br>
+                   2. Prosto prošlo vrěme (aorist, imperfect) je shranilo se jedino v česti slovjanskyh jezykov, tomu vměsto njego jest rekomendovano koristati glagol byti + l-particip (pisah → jesm pisal). </p>
+            </div>
+        </div>
+
+        <p style="text-align: center">Table with all rules you can download <a href="res/ns-pregled.pdf">here</a></p>
+    </main>
+    <footer>
+        <a href="https://pg.edu.pl/"><img alt="pg logo" id="pg-img" src="res/193012.svg"></a>
+        <ul>
+            <li>2023 Myron Ryzleitsev</li>
         </ul>
-      </nav>
-    </div>
-
-    <a id="header__panel_el4" href="https://mryzleitsev.space/" style="text-decoration: none">About page creator</a>
-    <p hidden="hidden">interslavic language</p>
-
-    <button onclick="toggleOverlay()" id="nav__mobile_drop" hidden="hidden">&#9776;</button>
-    <div id="overlay" class="overlay">
-      <div class="overlay-content">
-        <span onclick="toggleOverlay()" class="close-button cta">&#9776;</span>
-        <ul class="mobile__links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="community.html">Community</a></li>
-          <li class="chosen"><a href="grammar.html">Grammar</a></li>
-          <li><a href="https://mryzleitsev.space/">About page creator</a></li>
-        </ul>
-      </div>
-    </div>
-
-  </header>
-  <main>
-
-  </main>
-  <footer>
-    <a href="https://pg.edu.pl/"><img id="pg-img" src="res/193012.svg" alt="pg logo"></a>
-    <ul>
-      <li>2023 Myron Ryzleitsev</li>
-    </ul>
-    <a href="contact.html"><button>Get in touch</button></a>  </footer>
+        <a href="contact.html">
+            <button>Get in touch</button>
+        </a></footer>
 </div>
 <script src="main.js"></script>
 </body>
