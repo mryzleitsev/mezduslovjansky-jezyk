@@ -17,18 +17,37 @@
         </nav>
     </header>
     <main>
-        <form class="contact__form" action="#" method="post">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required>
+        <main>
+            <form class="contact__form" action="#" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
 
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required>
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
 
-            <label for="message">Your Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+                <label for="phone">Your Phone:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="456-790-455" required>
 
-            <button type="submit">Submit</button>
-        </form>
+                <label for="gender">Your Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="birthdate">Your Birthdate:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+
+                <label for="file">Upload File:</label>
+                <input type="file" id="file" name="file">
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+
     </main>
     <footer>
     <a href="https://pg.edu.pl/"><img id="pg-img" src="res/193012.svg" alt="pg logo"></a>
