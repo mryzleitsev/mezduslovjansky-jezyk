@@ -250,6 +250,31 @@ input:focus, textarea:focus {
     margin: 5px;
 }
 
+.anim::before {
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+
+.anim:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.anim::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: #99DDFFFF;
+    z-index: -1;
+    transition: transform .3s ease;
+}
+
+.anim {
+    position: relative;
+}
+
 @media (max-width: 992px) {
     .nav__links {
         display: none;
