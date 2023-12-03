@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+        <!ELEMENT index (mainInfo, content)>
+        <!ELEMENT mainInfo (author, links, countriesLn, imgs, linguists)>
+        <!ELEMENT author (name, surname)>
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT surname (#PCDATA)>
+        <!ELEMENT links (link+)>
+        <!ELEMENT link (#PCDATA)>
+        <!ATTLIST link
+                theme (mainPage | communityPage | grammarPage | contactPage | myPage | pg) #REQUIRED>
+        <!ELEMENT countriesLn (countryLn+)>
+        <!ELEMENT countryLn (#PCDATA)>
+        <!ELEMENT imgs (img+)>
+        <!ELEMENT img (#PCDATA)>
+        <!ATTLIST img source CDATA #REQUIRED>
+        <!ELEMENT linguists (linguist+)>
+        <!ELEMENT linguist (#PCDATA)>
+        <!ELEMENT content (paragraphs)>
+        <!ELEMENT paragraphs (goal, idea, background, history, earlyProj, TwthCentury)>
+        <!ELEMENT goal (#PCDATA)>
+        <!ELEMENT idea (#PCDATA)>
+        <!ELEMENT background (#PCDATA)>
+        <!ELEMENT history (#PCDATA)>
+        <!ELEMENT earlyProj (#PCDATA)>
+        <!ELEMENT TwthCentury (#PCDATA)>
