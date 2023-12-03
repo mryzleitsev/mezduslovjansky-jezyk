@@ -248,6 +248,12 @@ input:focus, textarea:focus {
     background-color: #0088a9;
 }
 
+.countries_list{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
 @media (max-width: 992px) {
     .nav__links {
         display: none;
