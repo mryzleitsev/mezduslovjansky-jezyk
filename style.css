@@ -296,4 +296,8 @@ input:focus, textarea:focus {
         cursor: pointer;
     }
 
+    #overlay{
+        z-index: 10000;
+    }
+
 }
